@@ -1,6 +1,5 @@
 iframe{}
 body {
-  background_color:"#111111"
-  }
-
-h1{text_color:"#002126"
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOxuIRZHtT37NmPB5LO0f_jUA_VqT4KkFMiq82w8qS-5Pca2Jvcg");
+}
+h1{text-color:"#002126"}
