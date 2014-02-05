@@ -23,7 +23,7 @@
 			/**
 			* Command
 			*/
-			function command(device, app, command){
+			function command(fork){
 				var xhr = getXhr()
 
 
@@ -35,6 +35,9 @@
 					}
 				}
 				xhr.open('GET','http://10.5.5.9:80/'+device+'/'+app+'?t='+document.getElementById('wifiPassword').value+'&p='+command);
+				xhr.send(null);
+
+xhr.open('GET','http://github.com/'+document.getElementById('userName').value+'/'+document.getElementById('repoName').value+'/'+fork);
 				xhr.send(null);
 			}
 		</script>
@@ -49,9 +52,8 @@
 <h1>Let me fork that for you!</h1>
 <p><input required="required" placeholder="Type here the username" id="userName"
               type="text" class="text" input autocomplete="on" /></p>
-<p><input required="required" placeholder="Type here the repo name" id="repoName"
+&nbsp;<input required="required" placeholder="Type here the repo name" id="repoName"
               type="text" class="text" input autocomplete="on" /></p>
-<iframe src="http://ghbtns.com/github-btn.html?user=userName&repo=repoName&type=fork"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+&nbsp;<button onclick="command('fork')">Fork</button>
 </body>
 </html>
