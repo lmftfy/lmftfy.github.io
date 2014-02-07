@@ -1,58 +1,18 @@
 <html>
 <head>
-		<script type='text/JavaScript'>
-			function getXhr(){
-				var xhr = null;
-				if(window.XMLHttpRequest) // Firefox and others
-					xhr = new XMLHttpRequest();
-				else if(window.ActiveXObject){ // Internet Explorer
-					try {
-						xhr = new ActiveXObject("Msxml2.XMLHTTP");
-					} catch (e) {
-						xhr = new ActiveXObject("Microsoft.XMLHTTP");
-					}
-				}
-				else { // XMLHttpRequest no supported
-					alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest...");
-					xhr = false;
-				}
-				return xhr
-			}
-
-
-			/**
-			* Command
-			*/
-			function command(fork){
-				var xhr = getXhr()
-
-
-				xhr.onreadystatechange = function(){
-
-
-					if(xhr.readyState == 4 && xhr.status == 200){
-						alert(xhr.responseText);
-					}
-				}
-			
-
-xhr.open('GET','http://github.com/'+document.getElementById('userName').value+'/'+document.getElementById('repoName').value+'/fork');
-				xhr.send(null);
-			}
-		</script>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-
 <title>Let me fork that for you</title>
-
 </head>
 <body>
 <center>
 <h1>Let me fork that for you!</h1>
 <p><input required="required" placeholder="Type here the username" id="userName"
-              type="text" class="text" input autocomplete="on" /></p>
-&nbsp;<input required="required" placeholder="Type here the repo name" id="repoName"
-              type="text" class="text" input autocomplete="on" /></p>
-&nbsp;<button onclick="command('fork')">Fork</button>
+              type="text" class="text" input autocomplete="on" />
+  /
+    <input name="text" type="text" class="text" id="repoName" value="" required="required" placeholder="Type here the repo name" input="input" autocomplete="on">
+</p>
+
+</p>
+
+<a href="http://github.com/userName/repoName/fork">FORK</a>
 </body>
 </html>
