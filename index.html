@@ -25,8 +25,8 @@ var userName = document.getElementById('userName');
 
 
 button.onclick = function () {
-    var str = 'http://www.github.io/'+userName.value +
-        '/'+repoName.value+
+    var str = 'http://www.github.io/'+ $(userName.value) +
+        '/'+ $(repoName.value)+
         '/fork'
     alert(str);
 };
