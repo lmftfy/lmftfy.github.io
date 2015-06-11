@@ -15,9 +15,21 @@
 
 </p>
 <div>
-<a href="http://github.com/userName/repoName/fork">FORK</a></br>
-
+ <button id="test">Test</button>
 </div>
 
+<script>
+  var button = document.getElementById('test');
+var repoName = document.getElementById('repoName');
+var userName = document.getElementById('userName');
+
+
+button.onclick = function () {
+    var str = 'http://www.github.io/ ' + userName.value + 
+        '/ ' + repoName.value +
+        ' /fork '
+    alert(str);
+};
+</script>
 </body>
 </html>
