@@ -14,7 +14,6 @@
     <input name="text" type="text" class="text" id="repoName" value="" required="required" placeholder="Type here the repo name" input="input" autocomplete="on">
 </p>
 
-</p>
 <!--
 Igual necesitamos algo aqui
  -->
@@ -31,9 +30,9 @@ var userName = document.getElementById('userName');
 
 button.onclick = function () {
     var str = "http://www.github.com/" + userName.value + "/"+ repoName.value + "/fork"; alert(str);
-    //var url = window.location = "var str";  ??? no se si esto vale para algo. Modificalo. (esto es para que valla al variable de arriba)
 };
 
+//var url = window.location = "var str";  ??? no se si esto vale para algo. Modificalo. (esto es para que valla al variable de arriba)
 </script>
 </body>
 </html>
