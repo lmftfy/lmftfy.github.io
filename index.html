@@ -14,24 +14,19 @@
     <input name="text" type="text" class="text" id="repoName" value="" required="required" placeholder="Type here the repo name" input="input" autocomplete="on">
 </p>
 
-<!--
-Igual necesitamos algo aqui
- -->
-  <div>
+</p>
+<div>
 <button id="test">Test</button>
 </div>
-
 
 <script id="var">
   var button = document.getElementById('test');
 var repoName = document.getElementById('repoName');
 var userName = document.getElementById('userName');
-
-
 button.onclick = function () {
-    var str = "http://www.github.com/" + userName.value + "/"+ repoName.value + "/fork"; alert(str);
+    var str = "http://www.github.io/" + userName.value + "/"+ repoName.value + "/fork"; alert(str);
+    
 };
-
 //var url = window.location = "var str";  ??? no se si esto vale para algo. Modificalo. (esto es para que valla al variable de arriba)
 </script>
 </body>
