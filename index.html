@@ -8,6 +8,8 @@
 </head>
 <body>
 <center>
+  <div id="content">
+    
 <h1>Let me fork that for you!</h1>
 <p><input required="required" placeholder="Type here the username" id="userName"
               type="text" class="text" input autocomplete="on" />
@@ -16,16 +18,15 @@
 </p>
 
 </p>
-<div>
 <button id="test">Test</button>
-</div>
-
+  </div>
+  
 <script id="var">
   var button = document.getElementById('test');
 var repoName = document.getElementById('repoName');
 var userName = document.getElementById('userName');
 button.onclick = function () {
-    var forkedrepo = "http://www.github.io/" + userName.value + "/"+ repoName.value + "/fork"; window.location = forkedrepo; 
+    var forkedrepo = "http://www.github.com/" + userName.value + "/"+ repoName.value + "/fork"; window.location = forkedrepo; 
     
 };
 // Oda al Verano Quevedesca
