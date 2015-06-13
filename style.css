@@ -8,10 +8,9 @@ h1{
 }
 #content{
  width:50%;
- height:60%;
  background-color:white;
- border-style:4px black solid;
- border-radius:4px;
+ border:4px black solid;
+ border-radius:8px;
 }
 button{
  background:black;
