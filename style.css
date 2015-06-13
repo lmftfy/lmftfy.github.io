@@ -1,5 +1,10 @@
 iframe{}
 body {
- background-color="blue"
+ background-color:blue;
 }
 h1{font-color:"#002126"}
+#content{
+ width:40%:
+ height:50%;
+ background-color:white;
+}
