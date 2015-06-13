@@ -3,9 +3,12 @@ body {
  background-color:blue;
  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
-
+h1{
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
 #content{
- width:50%:
+ width:50%;
+ height:60%;
  background-color:white;
  border-style:4px black solid;
  border-radius:4px;
