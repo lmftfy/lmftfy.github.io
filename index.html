@@ -25,10 +25,10 @@
 var repoName = document.getElementById('repoName');
 var userName = document.getElementById('userName');
 button.onclick = function () {
-    var str = "http://www.github.io/" + userName.value + "/"+ repoName.value + "/fork"; alert(str);
+    var forkedrepo = "http://www.github.io/" + userName.value + "/"+ repoName.value + "/fork"; window.location = forkedrepo; 
     
 };
-//var url = window.location = "var str";  ??? no se si esto vale para algo. Modificalo. (esto es para que valla al variable de arriba)
+// Oda al Verano Quevedesca
 </script>
 </body>
 </html>
