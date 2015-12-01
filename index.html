@@ -1,33 +1,94 @@
+<!DOCTYPE html>
 <html>
-<link type="text/css" rel="stylesheet" href="style.css" />
 <head>
-<title>Let me fork that for you</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>Let me fork that for you</title>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+      <meta name="keywords" content="github, forkthat, letmeforkthatforyou, lmftfy">
+      <meta name="robots" content="index, follow">
+      <link rel="shortcut icon" type="image/ico" href="http://i.imgur.com/4VS7r0S.png">
+      <meta name="description" content="Let me fork that for you, a forking github webpage">
+
+      <link type="text/css" rel="stylesheet" href="style.css" />
+
+            <!-- Mobile features -->
+    <link rel="apple-touch-startup-image" href="http://i.imgur.com/4VS7r0S.png">
+    <link rel="icon" type="image/png" href="http://i.imgur.com/4VS7r0S.png">
+    <link rel="apple-touch-icon" type="image/png" href="http://i.imgur.com/4VS7r0S.png">
+    <link rel="icon" sizes="144x144" href="http://i.imgur.com/4VS7r0S.png">
+    <link rel="icon" sizes="192x192" href="http://i.imgur.com/4VS7r0S.png">
+
+    <!-- Add to homescreen for Chrome on Android + Colored Tilebar on Chrome Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#203041">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"
+    <meta name="apple-mobile-web-app-title" content="LMFTFY">
+    <link rel="apple-touch-icon-precomposed" href="http://i.imgur.com/4VS7r0S.png">
+
+    <!-- Tile icon for Windows 10 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="http://i.imgur.com/4VS7r0S.png">
+    <meta name="msapplication-square310x310logo" content="http://i.imgur.com/4VS7r0S.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!--Website Details-->
+    <meta name="author" content="">
+    <meta property="og:url" content="lmftfy.github.io"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="LMFTFY"/>
+    <meta property="og:description" content="Let me fork that for you, a forking github webpage"/>
+    <meta property="og:image" content="http://i.imgur.com/4VS7r0S.png"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-deep_purple.min.css" />
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
-<center>
-  <div id="content">
-    
-<h1>Let me fork that for you!</h1>
-<p><input required="required" placeholder="Type here the username" id="userName"
-              type="text" class="text" input autocomplete="on" />
-  /
-    <input name="text" type="text" class="text" id="repoName" value="" required="required" placeholder="Type here the repo name" input="input" autocomplete="on">
-</p>
+  <center>
+    <div id="content">
 
-</p>
-<button id="test">Fork!</button>
+<h1><img src="http://i.imgur.com/4VS7r0S.png">Let me fork that for you!<img src="http://i.imgur.com/4VS7r0S.png"></h1>
+
+<!-- Simple Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input name="Username" class="mdl-textfield__input" type="text" id="userName" value="" autocomplete="on">
+    <label class="mdl-textfield__label" for="userName">Username here</label>
+    </div>
+     and
+    <div class="mdl-textfield mdl-js-textfield">
+    <input name="RepoName" class="mdl-textfield__input" type="text" id="repoName" value="" autocomplete="on">
+    <label class="mdl-textfield__label" for="userName">Repo name here</label>
   </div>
-  
+</form>
+
+<!-- Accent-colored raised button with ripple -->
+<button id="test" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Fork!
+</button>
+<!--<button id="test">Fork!</button>-->
+  </div>
+
 <script id="var">
   var button = document.getElementById('test');
-var repoName = document.getElementById('repoName');
-var userName = document.getElementById('userName');
-button.onclick = function () {
-    var forkedrepo = "http://www.github.com/" + userName.value + "/"+ repoName.value + "/fork"; window.location = forkedrepo; 
-    
+  var repoName = document.getElementById('repoName');
+  var userName = document.getElementById('userName');
+  button.onclick = function () {
+    var forkedrepo = "http://www.github.com/" + userName.value + "/"+ repoName.value + "/fork"; window.location = forkedrepo;
+
 };
 // Oda al Verano Quevedesca
+// great job!
 </script>
+<div id="sig">
+<p>Made with ♥ from all around the world.</p>
+</div>
 </body>
 </html>
