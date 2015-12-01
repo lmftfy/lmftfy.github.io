@@ -45,20 +45,35 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-deep_purple.min.css" />
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
-<center>
-  <div id="content">
+  <center>
+    <div id="content">
 
-<h1>Let me fork that for you!</h1>
-<p><input required="required" placeholder="Type here the username" id="userName"
-              type="text" class="text" input autocomplete="on" />
-  /
-    <input name="text" type="text" class="text" id="repoName" value="" required="required" placeholder="Type here the repo name" input="input" autocomplete="on">
-</p>
+<h1><img src="http://i.imgur.com/4VS7r0S.png">Let me fork that for you!<img src="http://i.imgur.com/4VS7r0S.png"></h1>
 
-</p>
-<button id="test">Fork!</button>
+<!-- Simple Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input name="Username" class="mdl-textfield__input" type="text" id="sample1" value="" autocomplete="on">
+    <label class="mdl-textfield__label" for="userName">Username here</label>
+    </div>
+     and
+    <div class="mdl-textfield mdl-js-textfield">
+    <input name="RepoName" class="mdl-textfield__input" type="text" id="repoName" value="" autocomplete="on">
+    <label class="mdl-textfield__label" for="userName">Repo name here</label>
+  </div>
+</form>
+
+<!-- Accent-colored raised button with ripple -->
+<button id="test" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Fork!
+</button>
+<!--<button id="test">Fork!</button>-->
   </div>
 
 <script id="var">
