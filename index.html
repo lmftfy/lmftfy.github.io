@@ -2,7 +2,7 @@
 <html>
 <head>
       <title>Let me fork that for you</title>
-      
+
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
@@ -10,16 +10,16 @@
       <meta name="robots" content="index, follow">
       <link rel="shortcut icon" type="image/ico" href="http://i.imgur.com/4VS7r0S.png">
       <meta name="description" content="Let me fork that for you, a forking github webpage">
-    
+
       <link type="text/css" rel="stylesheet" href="style.css" />
-    
+
             <!-- Mobile features -->
     <link rel="apple-touch-startup-image" href="http://i.imgur.com/4VS7r0S.png">
     <link rel="icon" type="image/png" href="http://i.imgur.com/4VS7r0S.png">
     <link rel="apple-touch-icon" type="image/png" href="http://i.imgur.com/4VS7r0S.png">
     <link rel="icon" sizes="144x144" href="http://i.imgur.com/4VS7r0S.png">
     <link rel="icon" sizes="192x192" href="http://i.imgur.com/4VS7r0S.png">
-    
+
     <!-- Add to homescreen for Chrome on Android + Colored Tilebar on Chrome Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#203041">
@@ -34,7 +34,7 @@
     <meta name="msapplication-TileImage" content="http://i.imgur.com/4VS7r0S.png">
     <meta name="msapplication-square310x310logo" content="http://i.imgur.com/4VS7r0S.png">
     <meta name="msapplication-TileColor" content="#3372DF">
-    
+
     <!--Website Details-->
     <meta name="author" content="">
     <meta property="og:url" content="lmftfy.github.io"/>
@@ -42,11 +42,14 @@
     <meta property="og:title" content="LMFTFY"/>
     <meta property="og:description" content="Let me fork that for you, a forking github webpage"/>
     <meta property="og:image" content="http://i.imgur.com/4VS7r0S.png"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 <center>
   <div id="content">
-    
+
 <h1>Let me fork that for you!</h1>
 <p><input required="required" placeholder="Type here the username" id="userName"
               type="text" class="text" input autocomplete="on" />
@@ -57,16 +60,18 @@
 </p>
 <button id="test">Fork!</button>
   </div>
-  
+
 <script id="var">
   var button = document.getElementById('test');
-var repoName = document.getElementById('repoName');
-var userName = document.getElementById('userName');
-button.onclick = function () {
-    var forkedrepo = "http://www.github.com/" + userName.value + "/"+ repoName.value + "/fork"; window.location = forkedrepo; 
-    
+  var repoName = document.getElementById('repoName');
+  var userName = document.getElementById('userName');
+  button.onclick = function () {
+    var forkedrepo = "http://www.github.com/" + userName.value + "/"+ repoName.value + "/fork"; window.location = forkedrepo;
+
 };
 // Oda al Verano Quevedesca
+// great job!
 </script>
+<p>Made with ♥ from all around the world.</p>
 </body>
 </html>
